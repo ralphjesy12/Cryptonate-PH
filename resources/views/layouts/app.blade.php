@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{{ asset('/css/bootstrap-slim.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/semantic/dist/semantic.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
+
     @stack('styles')
 </head>
 <body>
@@ -21,6 +22,7 @@
     <script src="{{ asset('/semantic/dist/semantic.min.js') }}" charset="utf-8"></script>
     <script src="{{ asset('/js/app.js') }}" charset="utf-8"></script>
     <script src="{{ asset('/js/scripts.js') }}" charset="utf-8"></script>
+
     @stack('scripts')
 </body>
 </html>

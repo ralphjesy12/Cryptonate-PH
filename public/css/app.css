@@ -40,3 +40,7 @@ body .pusher .wrapper .content-wrapper {
   margin: 1em;
 }
 
+body .fullheight {
+  height: 100vh;
+}
+
