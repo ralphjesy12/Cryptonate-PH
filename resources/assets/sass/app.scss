@@ -1,14 +1,40 @@
+// Colors
+$white : #fff;
+$purple : #604d8c;
 
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+// Settings
+$primary: $purple;
 
-// Variables
-@import "variables";
+// Defaults
+$bg : $primary;
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+body{
+    background-color: lighten($bg,55%);
+    .pusher{
+        .wrapper{
+            display: flex;
+            flex-direction: row;
+            .sidebar-wrapper{
+                position: relative;
+                z-index: 1;
+                background-color: $bg;
+                width: 250px;
+                flex: 0 0 auto;
+                position: relative;
+                height: 100vh;
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+                .vertical.menu{
+                    margin: 1em;
+                    background-color: $bg;
+                    box-shadow: none;
+                    border: none;
+                }
+            }
+            .content-wrapper{
+                flex: 1 1 auto;
+                min-width: 0px;
+                margin: 1em;
+            }
+        }
+    }
 }
